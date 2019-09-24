@@ -1,0 +1,228 @@
+.navbar-right .head-portrait{
+  width: 50px;
+  height: 50px;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  
+  
+}
+.navbar-form span{
+  display: block;
+  background: burlywood;
+  width: 50px;
+  height: 50px;
+  float: left;
+  
+}
+.navbar-nav .frame{
+  width: 200px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+  margin-top: 16px;
+  margin-left: 150px;
+  
+}
+.navbar{
+  
+   z-index:200;
+ 
+}
+.navbar-default{
+  height: 80px;
+  background:white;
+  border-bottom: 1px solid gainsboro;
+  
+ 
+}
+#logo{
+  width: 200px;
+  height: 80px;
+  background:url(../img/logo.png);
+  display: block;
+  overflow:hidden;
+  background-position: center;
+  background-clip: content-box;
+  margin-top: -30px;
+  
+}
+.navbar-default a{
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  
+  
+}
+.navbar-default .head-portrait{
+  margin-top: 10px;
+}
+.download{
+  position: absolute;
+  left: 65%;
+  top: 60px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid gray;
+  background: white;
+  display:none;
+  z-index: 2;
+ 
+  
+  
+}
+.download .download-left{
+  float: left;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  margin-left: 5px;
+ 
+  
+}
+.download .download-right{
+  float: right;
+  width: 140px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  display: block;
+  background: white;
+ 
+  
+  
+}
+
+.download .download-right .app{
+  width: 140px;
+  height: 20px;
+  font-size: 16px;
+  color: black;
+  
+ 
+ 
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin-top: 30px;
+}
+.download .download-right .apple a{
+  width: 120px;
+  height: 30px;
+  border: 1px solid black;
+  background:grey;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+   border-radius: 12px;
+   margin-left: 9px;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+  
+  
+}
+.download .download-right .android a{
+  width: 120px;
+  height: 30px;
+  border: 1px solid black;
+  background:grey;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  border-radius: 12px;
+  margin-left: 9px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+.download .download-right .android a:hover{
+  background: black;
+  
+}
+.download .download-right .apple a:hover{
+   background: black;
+}
+/*.navbar-header{
+  position: relative;
+}*/
+.download-box{
+   position: relative;
+} 
+.download-li:hover div{
+  display: block;
+  
+}
+.box1 p{
+  
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+  background: blueviolet;
+  display: block;
+  font-size: 28px;
+  
+  
+}
+.box2 p{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+  background: brown;
+  display: block;
+  font-size: 28px;
+}
+.box3 p{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+  background: black;
+  display: block;
+  font-size: 28px;
+}
+.box4 p{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+  background: darkslategrey;
+  display: block;
+  font-size: 28px;
+}
+.box5 p{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+  background:orangered;
+  display: block;
+  font-size: 28px;
+}
+.box6 p{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+  background: midnightblue;
+  display: block;
+  font-size: 28px;
+}
+.thumbnail img{
+  display: block;
+  animation: all 2s linear;
+    
+  
+}
+.thumbnail img:hover{
+ 
+  box-shadow: 5px 5px 5px 5px grey;
+  
+  
+}
+.logo{
+  margin-top: -100px;
+}

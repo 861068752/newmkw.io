@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>慕课网</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_506903_bau4gav2fmuhxgvi.css"/>
+    <link rel="stylesheet" type="text/css" href="css/wjs.css"/>
+	  
+	</head>
+	<body>
+	<!--  导航栏开始-->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <span id="logo"></span>
+       
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="active"><a href="#">免费课程<span class="sr-only">(current)</span></a></li>
+        <li><a href="work.html">职业路径</a></li>
+        <li><a href="combat.html">实战</a></li>
+        <li><a href="#">猿问</a></li>
+        <li><a href="discover.html">发现</a></li>
+        <li class="frame"><a href="#"></a></li>
+        <li><a href="#"><i  class="iconfont icon-iconfonticonfontsousuo1"></i></a></li>
+      </ul>
+     
+        <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right download-box">
+        <li class="download-li"><a href="App.html">下载APP</a></li>
+      
+        <li><a href="#">注册/登录</a></li>
+       
+        <li class="head-portrait"><a href="#"></a></li>
+        
+      </ul>
+      <div class="download">
+      	 <span class="download-left">
+      	   <img src="img/App下载.png"/>
+      	 </span>
+      	 
+      	 <span class="download-right">
+      	     <span class="app">扫码下载慕课网APP</span>
+      	     <span class="apple"><a href="#" class="iconfont icon-apple">App store下载</a></span>
+      	     <span class="android"><a href="#" class="iconfont icon-android"">Android下载</a></span>
+      	    
+      	    
+      	 </span>
+      	 
+      	 
+      </div>
+    </div><!-- /.navbar-collapse -->
+     
+  </div><!-- /.container-fluid -->
+  
+</nav>
+  
+	<div id="carousel-example-generic" class="carousel slide wjs_banner" data-ride="carousel">
+        <!-- 小圆点 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- 轮播的内容 -->
+        <div class="carousel-inner" role="listbox" id="inner">
+
+        </div>
+
+        <!-- 左右箭头 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </div>
+ 
+		
+	</body>
+	 <script type="text/template" id="slider">
+        <%for(var i=0;i<json.length;i++){%>
+            <div class="<%=(i==0?'item active':'item')%>">
+                <%if(isMobile){%>
+                    <a href="javascript"  class="small">
+                        <img src="<%=json[i].img%>">
+                    </a>
+                <%}else{%>
+                    <a href="javascript:;" style="background-image: <%=json[i].bac%>" class="big" ></a>
+                <%}%>
+            </div>
+        <%}%>
+    </script>
+    <div class="container-fluid">
+      <div class="row">
+       <div class="box1 ">
+                 <p class="col-lg-12 ">
+                   实／战／推／荐
+                 </p>
+        
+      </div>
+    	 
+    </div>
+    </div>
+    <!--实战推荐-->
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/实战-1.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/实战-2.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网稀缺Vue 2.0高级实战 独立开发专属音乐WebAPP</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/实战-3.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网最热Python3入门+进阶 更快上手实际开发</h3>
+        <p>￥499.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/实战-4.jpg" alt="...">
+      <div class="caption">
+        <h3>
+揭秘一线互联网企业 前端JavaScript高级面试
+实战高级151 </h3>
+        <p>￥299.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/实战-5.jpg" alt="...">
+      <div class="caption">
+        <h3>基于Golang协程实现Golang协程实现流量统计系统</h3>
+        <p>￥199.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/实战-1.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+      
+    	
+    </div>
+  <!--  新上好课-->
+   <div class="container-fluid">
+      <div class="row">
+       <div class="box2">
+                 <p class="col-lg-12">
+                    新／上／好／课 
+                 </p>
+        
+      </div>
+       
+    </div>
+    </div>
+    <!--实战推荐-->
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新上-1.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新上-2.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网稀缺Vue 2.0高级实战 独立开发专属音乐WebAPP</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新上-5.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网最热Python3入门+进阶 更快上手实际开发</h3>
+        <p>￥499.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新上-4.jpg" alt="...">
+      <div class="caption">
+        <h3>
+揭秘一线互联网企业 前端JavaScript高级面试
+实战高级151 </h3>
+        <p>￥299.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新上-5.jpg" alt="...">
+      <div class="caption">
+        <h3>基于Golang协程实现Golang协程实现流量统计系统</h3>
+        <p>￥199.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新上-6.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+      
+      
+    </div>
+   <!-- 新手入门-->
+   <div class="container-fluid">
+      <div class="row">
+       <div class="box3 hidden-xs">
+                 <p class="col-lg-12">
+                    新／手／入／门 
+                 </p>
+        
+      </div>
+       
+    </div>
+    </div>
+    <!--实战推荐-->
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新手-1.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新手-1.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网稀缺Vue 2.0高级实战 独立开发专属音乐WebAPP</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新手-1.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网最热Python3入门+进阶 更快上手实际开发</h3>
+        <p>￥499.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新手-4.jpg" alt="...">
+      <div class="caption">
+        <h3>
+揭秘一线互联网企业 前端JavaScript高级面试
+实战高级151 </h3>
+        <p>￥299.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新手-5.jpg" alt="...">
+      <div class="caption">
+        <h3>基于Golang协程实现Golang协程实现流量统计系统</h3>
+        <p>￥199.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/新手-4.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+      
+      
+    </div>
+  <!--  技能提升-->
+  <div class="container-fluid">
+      <div class="row">
+       <div class="box4 hidden-xs">
+                 <p class="col-lg-12">
+                    技／能／提／升
+                 </p>
+        
+      </div>
+       
+    </div>
+    </div>
+    <!--实战推荐-->
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/技能-1.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/技能-2.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网稀缺Vue 2.0高级实战 独立开发专属音乐WebAPP</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/技能-1.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网最热Python3入门+进阶 更快上手实际开发</h3>
+        <p>￥499.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/技能-4.jpg" alt="...">
+      <div class="caption">
+        <h3>
+揭秘一线互联网企业 前端JavaScript高级面试
+实战高级151 </h3>
+        <p>￥299.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/技能-5.jpg" alt="...">
+      <div class="caption">
+        <h3>基于Golang协程实现Golang协程实现流量统计系统</h3>
+        <p>￥199.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/技能-4.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+      
+      
+    </div>
+    技术
+    <div class="container-fluid">
+      <div class="row">
+       <div class="box5">
+                 <p class="col-lg-12">
+                  前／沿／技／术 
+                 </p>
+        
+      </div>
+       
+    </div>
+    </div>
+    <!--实战推荐-->
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/前-1.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/前-2.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网稀缺Vue 2.0高级实战 独立开发专属音乐WebAPP</h3>
+        <p>￥399.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/前-1.jpg" alt="...">
+      <div class="caption">
+        <h3>
+全网最热Python3入门+进阶 更快上手实际开发</h3>
+        <p>￥499.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/前-4.jpg" alt="...">
+      <div class="caption">
+        <h3>
+揭秘一线互联网企业 前端JavaScript高级面试
+实战高级151 </h3>
+        <p>￥299.00</p>
+        <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/前-5.jpg" alt="...">
+      <div class="caption">
+        <h3>基于Golang协程实现Golang协程实现流量统计系统</h3>
+        <p>￥199.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/前-2.jpg" alt="...">
+      <div class="caption">
+        <h3>  
+算法 机器学习
+Python3入门机器学习 经典算法与应用</h3>
+        <p>￥399.00</p>
+         <p><a href="#" class="btn btn-primary" role="button">加入购物车</a> <a href="#" class="btn btn-danger" role="button">立即购买</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+      
+      
+    </div>
+  <div class="container-fluid">
+      <div class="row">
+       <div class="box6 hidden-xs">
+                 <p class="col-lg-12">
+              慕／课／精／英／名／师
+                 </p>
+        
+      </div>
+       
+    </div>
+    </div>
+   
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="img/preson-4.jpg" alt="...">
+      <div class="caption">
+        <h5>  
+1）掌握IOS多媒体层中2D和3D绘图／动画（2）掌握AVFoundation AudioToolBox Audio Unit等音频处理框架实现音频混音、剪切、音频实时波形绘制（3）IOS自定义动画：对CALayer有较为深刻的理解（4）精通IOS音视频流媒体处理</h5>
+        <p>昵称：飞翔蜗牛</p>
+        <p><a href="#" class="btn btn-primary" role="button">关注ta</a> <a href="#" class="btn btn-danger" role="button">QQ</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="img/preson-2.jpg" alt="...">
+      <div class="caption">
+        <h5>
+前端高级工程师，PMP，开源编辑器wangEditor（github 4000 star）作者，现就职于BAT一线互联网公司。他的博客总流量过百万，如《深入理解JS原型和闭包》《深入理解JS异步》等。在慕课网已推出《前端javascript面试技巧》《React模拟大众点评webapp》等教程。</h5>
+        <p>昵称：双越</p>
+        <p><a href="#" class="btn btn-primary" role="button">关注ta</a> <a href="#" class="btn btn-danger" role="button">QQ</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="img/preson-3.jpg" alt="...">
+      <div class="caption">
+        <h5>
+载着干货的老司机。微服务，分布式架构方面经验丰富。</h5>
+        <p>昵称：廖师兄</p>
+        <p><a href="#" class="btn btn-primary" role="button">关注ta</a> <a href="#" class="btn btn-danger" role="button">QQ</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+   <div class="col-sm-3">
+    <div class="thumbnail">
+      <img src="img/preson-1.jpg" alt="...">
+      <div class="caption">
+        <h5>
+《Python3面向对象编程》第一版的中文译者之一。在全球领先的IT技术公司工作7年之久，对网络监控，流量分析领域的软件系统设计开发有着多年的经验；在GitHub上维护yabgp等开源项目；在国外知名在线教育平台有过Python课程英</h5>
+        <p>昵称：麦兜搞IT</p>
+        <p><a href="#" class="btn btn-primary" role="button">关注ta</a> <a href="#" class="btn btn-danger" role="button">QQ</a></p>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+    
+    
+  </div>
+</div>
+     
+      
+    </div>
+    <div class="container-fluid">
+      <div class="footer">
+        <img src="img/慕课网.png"/>
+      	
+      </div>
+    	
+    </div>
+    
+    
+    
+    
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/respond.min.js"></script>
+	<script type="text/javascript" src="lib/template-native.js"></script>
+	<script type="text/javascript" src="lib/html5shiv.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/swipe.js"></script>
+  <script type="text/javascript" src="js/download.js"></script>
+  
+
+</html>
